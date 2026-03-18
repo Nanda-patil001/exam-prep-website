@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>ExamPrep Hub</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+<h2>ExamPrep</h2>
+
+<a href="/home">Dashboard</a>
+<a href="/practice">Practice</a>
+<a href="/lecture_subjects">Lectures</a>
+<a href="/challenge">15 Min Challenge</a>
+<a href="/pyq">PYQs</a>
+<a href="/leaderboard">Leaderboard</a>
+<a href="/doubts">Doubts</a>
+
+</div>
+
+
+<!-- Main content -->
+<div class="main">
+
+<h1>My Study Zone</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Practice Questions</h3>
+<p>Solve daily practice questions</p>
+<a href="/practice">Start Practice</a>
+</div>
+
+<div class="card">
+<h3>15 Min Challenge</h3>
+<p>Speed test your knowledge</p>
+<a href="/challenge">Start Challenge</a>
+</div>
+
+<div class="card">
+<h3>PYQ Papers</h3>
+<p>Previous year exam questions</p>
+<a href="/pyq">View PYQs</a>
+</div>
+
+<div class="card">
+<h3>Doubt Discussion</h3>
+<p>Ask doubts with images</p>
+<a href="/doubts">Ask Doubt</a>
+</div>
+
+<div class="card">
+
+<h3>Your Progress</h3>
+
+<p>🔥 Streak: {{ session.get('streak',0) }}</p>
+
+<p>⭐ XP Points: {{ session.get('xp',0) }}</p>
+
+</div>
+</div>
+
+<h2>Engineering Subjects</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px">
+
+{% for subject in subjects %}
+
+<div style="background:white;padding:15px;border-radius:10px">
+
+<h3>{{ subject }}</h3>
+
+<a href="{{ url_for('lectures.topics', subject=subject) }}">
+<button>View Topics</button>
+</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

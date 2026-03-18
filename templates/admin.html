@@ -1,0 +1,35 @@
+<h2>Admin Dashboard</h2>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+
+<div style="background:#4CAF50;color:white;padding:20px;border-radius:10px">
+<h3>Total Users</h3>
+<p>{{ users }}</p>
+</div>
+
+<div style="background:#2196F3;color:white;padding:20px;border-radius:10px">
+<h3>Total Lectures</h3>
+<p>{{ lectures }}</p>
+</div>
+
+<div style="background:#FF9800;color:white;padding:20px;border-radius:10px">
+<h3>Total Questions</h3>
+<p>{{ questions }}</p>
+</div>
+
+<div style="background:#9C27B0;color:white;padding:20px;border-radius:10px">
+<h3>Challenges</h3>
+<p>{{ challenges }}</p>
+</div>
+
+</div>
+
+<br><br>
+
+<h3>Admin Controls</h3>
+
+<a href="/add_lecture"><button>Add Lecture</button></a>
+<a href="/add_question"><button>Add Question</button></a>
+<a href="/upload_questions"><button>Upload Question PDF</button></a>
+<a href="/add_pyq"><button>Add PYQ</button></a>
+<a href="/upload_pdf"><button>Upload Study Material</button></a>

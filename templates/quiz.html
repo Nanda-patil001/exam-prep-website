@@ -1,0 +1,21 @@
+<div id="timer">15:00</div>
+
+<script>
+let time = 900;
+
+setInterval(function(){
+
+let minutes = Math.floor(time/60)
+let seconds = time % 60
+
+document.getElementById("timer").innerHTML =
+minutes + ":" + (seconds < 10 ? "0"+seconds : seconds)
+
+time--
+
+if(time < 0){
+document.forms[0].submit()
+}
+
+},1000)
+</script>
