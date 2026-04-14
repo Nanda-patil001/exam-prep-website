@@ -1,90 +1,4 @@
-<<<<<<< HEAD
-/* ===== RESET ===== */
-body {
-    margin: 0;
-    padding: 10px;
-    font-family: Arial;
-    font-size: 18px;
-    background: #f5f5f5;
-}
 
-/* ===== NAVBAR ===== */
-.navbar {
-    text-align: center;
-    padding: 12px;
-    background: #1e88e5;
-    color: white;
-}
-
-/* REMOVE DESKTOP MENU */
-.menu {
-    display: none;
-}
-
-/* ===== DASHBOARD ===== */
-.dashboard {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 15px;
-}
-
-/* ===== CARDS ===== */
-.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 15px;
-}
-
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* ===== BUTTONS ===== */
-button {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    background: #1e88e5;
-    color: white;
-}
-
-/* ===== SUBJECT GRID ===== */
-.subjects {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    margin: 15px;
-}
-
-.subject {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* ===== REMOVE SIDEBAR COMPLETELY ===== */
-.sidebar {
-    display: none;
-}
-
-.container {
-    display: block;
-}
-
-/* ===== MOBILE FIX ===== */
-@media (max-width: 768px) {
-    * {
-        font-size: 16px;
-    }
-=======
 body{
 font-family: Arial;
 margin:0;
@@ -192,5 +106,5 @@ font-size:16px;
 
 .subject-btn:hover{
 background:#1565c0;
->>>>>>> 4b72cdccd7641943b955334ed39ab7a7af142874
+
 }

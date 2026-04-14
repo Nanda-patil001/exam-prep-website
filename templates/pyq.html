@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,33 +26,5 @@ height="600">
 {% endfor %}
 
 </body>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-<title>PYQ Papers</title>
 
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-</head>
-
-<body oncontextmenu="return false">
-
-<h2 align="center">Previous Year Question Papers</h2>
-
-{% for file in files %}
-
-<h3>{{ file[0] }}</h3>
-
-<iframe src="{{ url_for('static', filename='pdfs/' + file[1]) }}"
-width="100%"
-height="600">
-</iframe>
-
-<br><br>
-
-{% endfor %}
-
-</body>
->>>>>>> 4b72cdccd7641943b955334ed39ab7a7af142874
 </html>

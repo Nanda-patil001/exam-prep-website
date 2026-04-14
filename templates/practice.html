@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,39 +32,5 @@
 </form>
 
 </body>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-<title>{{ subject }} Practice</title>
-</head>
 
-<body oncontextmenu="return false">
-
-<h2 align="center">{{ subject.upper() }} Practice Quiz</h2>
-<h2>Subject: {{subject}}</h2>
-<h3>Topic: {{topic}}</h3>
-<form action="/submit_quiz" method="post" align="center">
-
-{% for q in questions %}
-
-<img src="/static/questions/{{ q[2] }}" width="600">
-
-<br>
-
-<input type="radio" name="q{{q[0]}}" value="{{q[3]}}"> {{q[3]}}<br>
-<input type="radio" name="q{{q[0]}}" value="{{q[4]}}"> {{q[4]}}<br>
-<input type="radio" name="q{{q[0]}}" value="{{q[5]}}"> {{q[5]}}<br>
-<input type="radio" name="q{{q[0]}}" value="{{q[6]}}"> {{q[6]}}<br>
-
-<br><br>
-
-{% endfor %}
-
-<button type="submit">Submit Quiz</button>
-
-</form>
-
-</body>
->>>>>>> 4b72cdccd7641943b955334ed39ab7a7af142874
 </html>
