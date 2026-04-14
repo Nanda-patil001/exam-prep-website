@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Study Materials</h1>
 
 <ul>
@@ -9,4 +10,17 @@ Open PDF
 </a>
 </li>
 {% endfor %}
+=======
+<h1>Study Materials</h1>
+
+<ul>
+{% for title, file in files %}
+<li>
+{{ title }}
+<a href="{{ url_for('static', filename='pdfs/' + file) }}" target="_blank">
+Open PDF
+</a>
+</li>
+{% endfor %}
+>>>>>>> 4b72cdccd7641943b955334ed39ab7a7af142874
 </ul>

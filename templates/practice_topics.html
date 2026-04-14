@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2>{{ subject }} Practice Topics</h2>
 
 {% for topic in topics %}
@@ -12,4 +13,20 @@
 
 </div>
 
+=======
+<h2>{{ subject }} Practice Topics</h2>
+
+{% for topic in topics %}
+
+<div style="background:white;padding:15px;margin:10px;border-radius:8px">
+
+<h3>{{ topic }}</h3>
+
+<a href="{{ url_for('practice.practice_topic', subject=subject, topic=topic) }}">
+<button>Start Practice</button>
+</a>
+
+</div>
+
+>>>>>>> 4b72cdccd7641943b955334ed39ab7a7af142874
 {% endfor %}
