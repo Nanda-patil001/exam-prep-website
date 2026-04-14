@@ -1,0 +1,15 @@
+<h2>{{ subject }} Topics</h2>
+
+{% for topic in topics %}
+
+<div style="margin:10px;padding:10px;background:white;border-radius:10px">
+
+<h3>{{ topic }}</h3>
+
+<a href="{{ url_for('lectures.lecture_page', subject=subject, topic=topic) }}">
+<button>Watch Lecture</button>
+</a>
+
+</div>
+
+{% endfor %}

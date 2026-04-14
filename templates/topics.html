@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ subject }} Topics</title>
+</head>
+
+<body>
+<h1>{{ subject }} Topics</h1>
+
+{% for topic in topics %}
+
+<div style="margin-bottom:20px">
+
+<h3>{{ topic }}</h3>
+
+<a href="/lectures/{{ subject }}/{{ topic }}">
+<button>Watch Lectures</button>
+</a>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>

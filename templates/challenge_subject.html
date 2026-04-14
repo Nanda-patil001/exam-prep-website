@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Select Subject</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h2>Select Subject for 15 Minute Challenge</h2>
+
+{% for subject in subjects %}
+
+<div style="background:white;padding:15px;margin:10px;border-radius:10px">
+
+<h3>{{ subject }}</h3>
+
+<a href="{{ url_for('challenge.challenge_topics', subject=subject) }}">
+<button>Start Challenge</button>
+</a>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>
